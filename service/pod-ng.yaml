@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myappng
+  namespace: aulainfra
+  labels:
+    name: myappng
+spec:
+  containers:
+    - name: myappng
+      image: nginx
+      ports:
+        - containerPort: 80
